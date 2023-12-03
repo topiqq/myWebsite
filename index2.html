@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penjaga Hati</title>
+
+  <style>
+    body {
+      background: url('images.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    img {
+      width: 400px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 3);
+    }
+
+    i.love {
+      color: red;
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      font-size: 32px;
+    }
+  </style>
+
+</head>
+<body>
+  <i class="love fa fa-heart"></i>
+  </style>
+  <img src="images.jpg">
+
+  <audio controls autoplay>
+    <source src="penjagahati.mp3" type="audio/mpeg">
+  </audio>
+
+  <p id="message1"></p>
+  <p id="message2"></p>
+  <p id="message3"></p>
+  <p id="message4"></p>
+  <p id="massage5"></p>
+  <style>
+    audio {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+    }
+    #message1 {
+      font-size: 5em;
+      font-weight: bold;
+      font-align: center;
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      /* warna font */
+      color:pink;
+      /*tebal stroke*/
+      -webkit-text-stroke: 1px black;
+      text-stroke: 1px black;
+      /*warna font*/
+      -webkit-text-fill-color: pink;
+      text-fill-color: pink;
+    }
+    #message2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-align: center;
+      position: fixed;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: beige;
+      -webkit-text-stroke: 0.5px black;
+      text-fill-color: 0.5px black;
+    }
+    #message3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-align: center;
+      position: fixed;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: beige;
+      -webkit-text-stroke: 0.5px black;
+      text-fill-color: 0.5px black;
+    }
+    #message4 {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-align: center;
+      position: fixed;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      color: beige;
+      -webkit-text-stroke: 0.5px black;
+      text-fill-color: 0.5px black;
+    }
+  </style>
+
+  <script>
+    var audio = document.querySelector("audio");
+    audio.onended = function() {
+      document.getElementById("message1").innerHTML = "I Love U"
+      document.getElementById("message2").innerHTML = "Terima Kasih Sudah Berkenan Mendengarkan"
+      document.getElementById("message3").innerHTML = "TERIMA KASIH ATAS KEBERADAANMU DI DUNIA INI"
+      document.getElementById("message4").innerHTML = "Dan Terima Kasih Sudah Mau Mengenalku"
+    }
+  </script>
+
+</body>
+</html>
